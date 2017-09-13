@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:orientation="vertical" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_begin"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    	    <TextView 
+	    		android:id="@+id/dateBeginDisplay"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+ 				android:text="" />
+			<TextView 
+	    		android:id="@+id/timeBeginDisplay"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text=""/>
+
+    <DatePicker
+        android:id="@+id/datePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TimePicker
+        android:id="@+id/timePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_end"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    	<TextView 
+        	android:id="@+id/dateEndDisplay"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text=""/>
+	    
+		<TextView 
+	    	android:id="@+id/timeEndDisplay"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text=""/>
+
+    <DatePicker
+        android:id="@+id/datePicker2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TimePicker
+        android:id="@+id/timePicker2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/buttonTimerSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/timesetup" />
+
+</LinearLayout>
+</ScrollView>

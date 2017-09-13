@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cam.surveil"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+	<uses-feature android:name="android.hardware.camera"  />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.STATUS_BAR"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />  
+    
+    <instrumentation android:name="android.test.InstrumentationTestRunner" android:targetPackage="cam.surveil"></instrumentation>
+    
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".IP_cam_surveillanceActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="image_capture"></activity>
+        <activity android:name="gallery_view"></activity>
+        <activity android:name="save_value"></activity>
+        <activity android:name="time_duration"></activity>
+        <activity android:name="video_record"></activity>
+        <activity android:name="streamRequest"></activity>
+        <activity android:name="streamvideo"></activity>
+        <activity android:name="setting_all"></activity>
+        <activity android:name="testClass"></activity>
+        <activity android:name="timeSetDurate"></activity>
+        <activity android:name="capturetime"></activity>
+        <activity android:name="preferences" android:label="Setting"></activity>
+        <activity android:name="showIPport"></activity>
+        <activity android:name="preview"></activity>
+        <activity android:name="previewVideo"></activity>
+        <activity android:name="StartActivity"></activity>
+        <activity android:name="ViewVideo"></activity>
+        <activity android:name="NotificationReceiver"></activity>
+        <activity android:name="camera_capture"></activity>
+        <activity android:name="ipcamSetup"></activity>
+        <activity android:name="pictureFrame"></activity>
+    </application>
+</manifest>

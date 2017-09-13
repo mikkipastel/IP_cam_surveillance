@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <PreferenceCategory android:title="Capture image" android:key="capture">
+        <CheckBoxPreference 
+            android:key = "capture image"
+            android:summary="Enable or disable capture image"           
+            android:title="Enable Capture Image" 
+            android:defaultValue="true"/>
+        	<ListPreference 
+        	    android:key="cature time"
+        	    android:title="Capture image every" 
+        	    android:summary="set time to capture" 
+        	    android:defaultValue="1"
+        	    android:entries="@array/timecapture"
+        	    android:entryValues="@array/timecaptureValues" />
+    </PreferenceCategory>   	
+    
+    <PreferenceCategory android:title="Record video" android:key="recode"> 	
+        <CheckBoxPreference 
+            android:key = "recode video"
+            android:summary="Enable or disable work recoding"
+            android:title="Enable Record working" 
+            android:defaultValue="false"/>
+    </PreferenceCategory>  
+    
+    <PreferenceCategory android:title="Time duration" android:key="timeduration">     
+        	<cam.surveil.DatePreference 
+        	    android:key="begindate"
+        	    android:title="Date Begin" 
+        	    android:summary="setting begin date to capture" /> 
+        	<cam.surveil.TimePreference 
+        	    android:key="begintime"
+        	    android:title="Time Begin" 
+        	    android:summary="setting begin time to capture" />	
+        	<cam.surveil.DatePreference 
+        	    android:key="enddate"
+        	    android:title="Date End" 
+        	    android:summary="setting end date to capture" />    
+        	<cam.surveil.TimePreference 
+        	    android:key="endtime"
+        	    android:title="Time End" 
+        	    android:summary="setting end time to capture" />	
+    </PreferenceCategory>
+
+</PreferenceScreen>

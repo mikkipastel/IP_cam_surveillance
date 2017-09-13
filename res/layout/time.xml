@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:orientation="vertical" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RadioGroup
+      	android:layout_width="fill_parent"
+     	android:layout_height="wrap_content"
+      	android:orientation="vertical"
+      	android:visibility="gone"  >
+
+    <RadioButton
+        android:id="@+id/radioButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timeRadio1" 
+        android:onClick="onRadioButtonClicked"
+        android:visibility = "gone" />
+    <Spinner 
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/time_duration"
+   		android:visibility = "gone" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timeRadio2"
+        android:onClick="onRadioButtonClicked" 
+        android:visibility = "gone" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+	<TextView
+	    android:id="@+id/textView1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/time_begin"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	<TableRow 
+	    android:id="@+id/tableRow1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	    	
+	    <TextView 
+	    	android:id="@+id/dateBeginDisplay"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+ 			android:text="" />
+		<TextView 
+	    	android:id="@+id/timeBeginDisplay"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text=""/>
+	    
+	</TableRow>
+
+	<TableRow
+	    android:id="@+id/tableRow2"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+		<Button
+		    android:id="@+id/pickdate1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/set_beginDate" />
+
+		<Button
+		    android:id="@+id/picktime1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/set_beginTime" />
+
+	</TableRow>
+
+	</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+	<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_end"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+	<TableRow 
+	    android:id="@+id/tableRow3"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+	    <TextView 
+        	android:id="@+id/dateEndDisplay"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text=""/>
+	    
+		<TextView 
+	    	android:id="@+id/timeEndDisplay"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text=""/>
+	</TableRow>
+
+	<TableRow
+	    android:id="@+id/tableRow4"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+		<Button
+		    android:id="@+id/pickdate2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/set_endDate" />
+		
+		<Button
+		    android:id="@+id/picktime2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/set_endTime" />
+			
+	</TableRow>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok" />
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/droid08"
+    android:gravity="center_vertical|top"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/MarqueeText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:freezesText="true"
+        android:lines="2"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="@string/welcome"
+        android:textColor="#ffffff"
+        android:textSize="50sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|fill_horizontal"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/pictureFrameButton"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:text="@string/PictureFramesMode"
+            android:textSize="30dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/CameraButton"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:text="@string/CameraSetting"
+            android:textSize="30dp" 
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

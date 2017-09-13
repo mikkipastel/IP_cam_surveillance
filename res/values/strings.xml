@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Welcome to IP camera surveillance!</string>
+    <string name="app_name">IP_cam_surveillance v.1</string>
+    <string name="image">Image</string>
+	<string name="video">Video</string>
+	<string name="funtion">Option</string>
+	<string name="view">View</string>
+	<string name="time">Time</string>
+	<string name="setting">Setting</string>
+	<string name="camera">Camera</string>
+	<string name="back">Back</string>
+	<string name="ok">SAVE</string>
+	<string name="time_begin">Time Begin</string>
+	<string name="time_end">Time End</string>
+	<string name="digitalclock">DigitalClock</string>
+	<string name="set_beginDate">Begin Date</string>
+	<string name="set_beginTime">Begin Time</string>
+	<string name="set_endDate">End Date</string>
+	<string name="set_endTime">End Time</string>
+	<string name="timeRadio1">Time Duration</string>
+	<string name="timeRadio2">Set Time</string>
+	<string name="gallery">Gallery</string>
+	<string name="album_name">IP_camera_IMAGE</string>
+	<string name="album_name_video">IP_camera_VIDEO</string>
+    
+	<string name="time_duration">Choose time</string>
+    <string-array name="timeDurate_array">
+        <item> </item>
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+        <string name="title_connection">Connection Setting</string>
+        <string name="ip_setting">IP Address</string>
+        <string name="port_setting">TCP Port</string>
+        <string name="connect">IP Port</string>
+        <string name="exit">exit</string>
+ 
+        <string name="showip"> </string>
+        <string name="showport"> </string> 
+        
+        <string name="msg_prepare_ok">Camera is OK. Using browser access: </string>
+        <string name="msg_prepare_error1">Your phone do not support MP4+AMR_BN format!!</string>
+    	<string name="msg_prepare_error2">Prepareing is error, please try again.</string>
+        <string name="msg_streaming">Streaming</string>
+		<string name="action_start">Start</string>
+		<string name="action_stop">Stop</string>
+		<string name="msg_idle">press Start to Stream</string> 
+		<string name="msg_prepare_waiting">Checking camera ..</string> 
+		<string name="test">test</string>
+		<string name="notification_text">AndroidCamm</string>
+		<string name="notification_subtitletext">Look at me</string>
+		<string name="welcome">Welcome to Ip Surveillance Application..!</string>
+		<string name="PictureFramesMode">PictureFrames Mode</string>
+		<string name="CameraSetting">CameraSetting</string>
+
+</resources>
